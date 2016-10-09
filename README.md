@@ -1,13 +1,8 @@
 # Pre-work - JBLOG
 
-> HINT: Please
-> - include this README.md in your project and fill out the information.
-> - remove the `README.rdoc` file that Rails generates.
-> - remove all the HINT blocks in this file.
+**JBLOG** is a Ruby on Rails blog application.
 
-**Name of your app** is a Ruby on Rails blog application.
-
-Submitted by: **Your Name Here**
+Submitted by: **Kien Do**
 
 Time spent: **X** hours spent in total
 
@@ -17,22 +12,18 @@ URL: **Insert your Heroku URL here**
 
 The following **required** functionality is complete:
 
-> HINT: mark the items you completed with [x]
-
 * [x] User can create a new post, formatted using the Markdown language.
 * [x] User can edit an existing post.
-* [ ] There is one post that introduces the App Creator with name, picture.
+* [x] There is one post that introduces the App Creator with name, picture.
 * [x] User can delete stories, with an alert that asks the user to confirm.
 * [x] User see a search form on the Posts page.
-* [ ] User can submit a search term to find all posts bywith titles containing the search term.
+* [x] User can submit a search term to find all posts bywith titles containing the search term.
 
 The following **optional** features are implemented:
 * [x] There is a "navbar" that is responsive to window size similar to http://v4-alpha.getbootstrap.com/examples/navbar/.
 * [ ] User can see how many views a post has.
 * [ ] User can leave a comment on a post.
 * [ ] User can add "tags" to a post, and filter posts by tag.
-
-> HINT: if you are unsure how to implement the Search feature, you can Google how to implement a simple search form. For example, one of the sites you will find is [this](http://www.jorgecoca.com/buils-search-form-ruby-rails/)
 
 The following **additional** features are implemented:
 
@@ -41,10 +32,6 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-
-> HINT: You can put a `walkthrough.gif` file in your project folder, add to git, and use the following syntax to embed it:  
-> `![Video Walkthrough](walkthrough.gif)`
->
 
 ![Video Walkthrough](/path/to/your/gif/file)
 

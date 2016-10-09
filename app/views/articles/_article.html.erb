@@ -2,7 +2,7 @@
   <div class="article">
     <h3 class="title"><%= article.title %></h3>
     <hr>
-    <p class="body"><%= @markdown.render(article.body).html_safe %></p>
+    <div class="body"><%= @markdown.render(article.body).html_safe %></div>
 
     <div class="functionality">
       <%= link_to 'Edit', edit_article_path(article), class: "btn btn-success" %>
