@@ -2,8 +2,10 @@
 
 <div class="row">
   <% if @articles.present? && !params[:search] %>
-    <%= render @articles  %>
-    <% else %>
+    <% @articles.each do |article| %>
+      <%= render partial: 'article', locals: {article: article, is_single: false} %>
+    <% end %>
+  <% else %>
     <p>There are no posts containing the term(s) <%= params[:search] %>.</p>
   <% end %>
 </div>

@@ -34,6 +34,8 @@ gem 'bootstrap', '~> 4.0.0.alpha4'
 
 gem 'redcarpet'
 
+gem 'bootstrap-glyphicons'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -1,43 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <div class="row">
-    <div class="article single">
-      <h3 class="title"><%= link_to @article.title, article_path(@article) %></h3>
-      <hr>
-      <div class="body"><%= @markdown.render(@article.body).html_safe %></div>
-
-      <div class="functionality">
-        <%= link_to 'Edit', edit_article_path(@article), class: "btn btn-success" %>
-        <div id="destroy-modal" style="display: inline">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Delete</button>
-
-          <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                  <h4 class="modal-title" id="myModalLabel">Are you sure to delete?</h4>
-                </div>
-
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <%= link_to 'Delete', @article, method: :delete, class: "btn" %>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
+    <%= render partial: 'article', locals: {article: @article, is_single: true} %>
 </div>
 
 <%= link_to 'Edit', edit_article_path(@article) %> |
