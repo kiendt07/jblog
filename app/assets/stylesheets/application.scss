@@ -21,6 +21,20 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 10px;
 }
 
+.article.multiple {
+  height: 300px;
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #666;
+}
+
 .article .title {
   text-align: center;
 }

@@ -1,9 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <div class="row">
-  <div class="col-sm-6">
-    <div class="article">
-      <h3 class="title"><%= @article.title %></h3>
+    <div class="article single">
+      <h3 class="title"><%= link_to @article.title, article_path(@article) %></h3>
       <hr>
       <div class="body"><%= @markdown.render(@article.body).html_safe %></div>
 
@@ -38,7 +37,6 @@
 
     </div>
 
-  </div>
 
 </div>
 
